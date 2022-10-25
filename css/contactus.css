@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: white;
+    /* display: flex; */
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+}
+.header img{
+    width: 100px;
+    height: 100px;
+}
+.header ul{
+    width: 50%;
+    display: flex;
+    float: right;
+    line-height: 100px;
+    justify-content: space-around;
+}
+.header ul li{
+    list-style: none;
+    cursor: pointer;
+}
+header ul li a{
+    text-decoration: none;
+}
+/* ********************home container************* */
+.home-container{
+    color: white;
+    height: calc(100vh - 100px);
+    /* height: 82.6vh; */
+    background: url(/img/floor-g688bcdc46_1280.jpg);
+    background-size: cover;
+    /* background-position: cover ; */
+    text-align: center;
+    padding-top:80px ;
+}
+
+/* ************************contact container******************** */
+.contact-container{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.formulaire{
+   align-items: center;
+   
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.formulaire ::placeholder{
+    padding-left: 10px;
+}
+.formulaire p{
+    margin: 5px 0;
+    text-align: left;
+}
+.formulaire input ,.formulaire textarea,.formulaire button{
+    width: 60%;
+    margin-top: 12px;
+    background-color: #e3dbdb7a;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.formulaire button{
+    color: white;
+    background-color: red;
+    padding: 5px 0;
+    border: none;
+    border-radius: 10px;
+}
+.map{
+    text-align: center;
+    width: 50%;
+}
+.map p,.map h4{
+    padding-top:10px ;
+}
+.map span{
+    color: red;
+}
+/* ************************contact container******************** */
+footer{
+    background-color: #CEE1E1;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 200px;
+}
+footer .card{
+    /* height: 350px;
+    width: 300px; */
+    /* background-color: #f1e5e5; */
+    border-radius: 20px;
+}
+footer .card .img-card-4{
+    height: 175px;
+    width: 263px;
+    background:url(/img/IMAGE.jpg);
+    background-size: cover;
+}
+footer button {
+    background-color: transparent;
+    border: solid 1px #000;
+    padding: 5px 5px;
+    font-size: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.copyright{
+    padding-top:30px ;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
