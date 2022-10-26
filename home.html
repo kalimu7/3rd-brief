@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="nav">
         <img src="/img/logo without bachgournd.png" alt="logo sushi"  >
         
-            <ul>
+            <ul class="nav-ul">
                 <li><a  href="./home.html" style="text-decoration: none;color: black;">Home</a> </li>
                 <li><a href="./about.html" style="text-decoration: none;color: black;">  About US</a></li>
                 <li><a href="./menu.html" style="text-decoration: none;color: black;">Card</a> </li>
-                <li><a href="./contactus.html" style="text-decoration: none;color: black;"> Contact Us</a> </li>
+                <li><a href="./contactus.html" style="text-decoration: none;color: black;"> Contact Us</a>
+                <i class="bi bi-x-circle clo-ico" id="close" ></i>
+                </li>
             </ul>        
+            <i class="bi bi-list resp-ico" id="open"  ></i>
     </div>
 
     
@@ -86,6 +90,6 @@
     <!-- **********footer******* -->
 
 
-
+<script src="/javascript/home.js"></script>
 </body>
 </html>

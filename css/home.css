@@ -3,16 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .header{
     background-color: white;
     /* display: flex; */
     height: 100px;
     width: 100%;
-    z-index: 1000;
+    /* z-index: 1000; */
+}
+.header .resp-ico{
+    display: none;
+    line-height: 100px;
+    float: right;
+    color: black;
+    padding-right: 20px;
+    font-size: 30px;
 }
 .header img{
     width: 100px;
     height: 100px;
+    
 }
 .header ul{
     width: 50%;
@@ -28,9 +40,12 @@
 header ul li a{
     text-decoration: none;
 }
+.header .clo-ico{
+    display: none;
+}
 /* ********************home container************* */
 .home-container{
-    
+    /* width: 100%; */
     height: calc(100vh - 100px);
     /* height: 82.6vh; */
     background: url(/img/asian-food.jpg);
@@ -121,3 +136,72 @@ footer button {
 }
 
 /* ***************************footer************************ */
+
+
+
+
+/* *********************************Responsive**********************< */
+@media screen and (max-width : 960px) {
+    /* .home-container,.homemidle{
+        overflow-x: hidden;
+    }    */
+    .homemidle .midlle{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    footer{
+        grid-template-columns: auto auto;
+        gap: 50px;
+    }
+
+}
+@media screen and (max-width : 620px) {
+    /* .home-container,.homemidle{
+        overflow-x: hidden;
+    }    */
+    .homemidle .midlle{
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+    footer{
+        grid-template-columns: auto;
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width : 433px) {
+    
+    .header .resp-ico{
+        display: block;
+    }
+    .header .clo-ico{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10px;
+    }
+    .header ul{
+        top: 0;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        right: -100%;
+        
+    }
+    /* .show{
+        right:0;
+    } */
+    /* .home-container{
+        width: 433px;
+    } */
+}
+/* *********************************Responsive**********************< */
