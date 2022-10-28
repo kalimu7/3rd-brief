@@ -100,7 +100,8 @@ header ul li a{
 
 /* ***************************footer************************ */
 footer{
-    background-color: #CEE1E1;
+    background-color: black;
+    color: white;
     line-height: 30px;
     display: grid;
     grid-template-columns: auto auto auto;

@@ -55,12 +55,12 @@ header ul li a{
 /* ************************contact container******************** */
 .contact-container{
     display: flex;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 .formulaire{
    align-items: center;
-   
+    
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -83,7 +83,7 @@ header ul li a{
 }
 .formulaire button{
     color: white;
-    background-color: red;
+    background-color: #F2B203;
     padding: 5px 0;
     border: none;
     border-radius: 10px;
@@ -91,6 +91,7 @@ header ul li a{
 .map{
     text-align: center;
     width: 50%;
+    margin-top: 20px;
 }
 .map p,.map h4{
     padding-top:10px ;
@@ -100,7 +101,8 @@ header ul li a{
 }
 /* ************************contact container******************** */
 footer{
-    background-color: #CEE1E1;
+    background-color: black;
+    color: white;
     line-height: 30px;
     display: grid;
     grid-template-columns: auto auto auto;

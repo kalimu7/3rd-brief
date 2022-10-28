@@ -3,6 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+.cartpanier{
+    height: 500px;
+    width: 400px;
+   
+    float: right;
+    color: #000;
+    z-index: 10000;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+
+}
+
+.hide {
+    display: none;
+}
 .header{
     background-color: white;
     /* display: flex; */
@@ -41,7 +61,7 @@ header ul li a{
     padding: 7px 50px;
     border-radius: 10px;
     border: none;
-    background-color: red;
+    background-color: #F2B203;
     color: white;
 }
 .card-container{
@@ -106,7 +126,8 @@ header ul li a{
 }
 /* ***************************footer************************ */
 footer{
-    background-color: #CEE1E1;
+    background-color: black;
+    color: white;
     line-height: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -230,4 +251,69 @@ footer button {
     }
 
 }
+#carte{
+    position: relative;
+
+}
+.show-nu{
+    top: -15px;
+    position: absolute;   
+    color: #F2B203;
+    font-size: 20px;
+    
+    
+    /* height: 10px; */
+    display: block;
+}
 /* ***************responsive footer***************** */
+.active{
+    background-color: #ffffff;
+}
+/* .cart .bi-cart4{
+    position: fixed;
+    right: 50px;
+    top: 160px;
+    
+} */
+.selectimg{
+    width: 200px;
+    height: 300px;
+    display: block;
+    /* background-color: black; */
+    float: right;
+    text-align: center;
+    color: white;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+}
+.selectimg img{
+    width: 100px;
+    height: 100px;
+}
+.panier-table{
+    display: flex;
+    justify-content: space-around;
+    line-height: 20px;
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

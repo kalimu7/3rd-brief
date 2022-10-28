@@ -16,36 +16,74 @@
         <ul class="nav-ul">
             <li><a  href="./home.html" style="text-decoration: none;color: black;">Home</a> </li>
                 <li><a href="./about.html" style="text-decoration: none;color: black;">  About US</a></li>
-                <li><a href="./menu.html" style="text-decoration: none;color: black;">Card</a> </li>
+                <li><a href="./menu.html" style="text-decoration: none;color: black;">Cart</a> </li>
                 <li><a href="./contactus.html" style="text-decoration: none;color: black;"> Contact Us</a> </li>
                 <i class="bi bi-x-circle clo-ico" id="close"></i>
+                <div>
+                    <i class="bi bi-cart4" style="font-size: 30px;" id="carte"></i><p class="show-nu">0</p>
+                </div>
+                
         </ul>
+        
+        <!-- <h1>CARTE</h1>  -->
         <i class="bi bi-list resp-ico" id="open"></i>
     </div>
+    
     <div class="cart">
-        <h1>CARTE</h1>
+        <h1>CARTE</h1> 
         <button id="sushi-btn" >Sushi</button>
         <button id="salade-btn">Salade</button>
         <button id="desserte-btn">Desserte</button>
         <button id="all-btn">ALL</button>
+        
     </div>
     <!-- ********************card section*********** -->
     <div class="card-container">
+        <div class="cartpanier">
+            <h3>Shooping Cart</h3>
+            <div class="panier-table">
+                <table class="styled-table">
+                    <thead>
+                            <th>title</th>
+                            <th>Price</th>
+                            <th>quantity</th>
+                            <th>total</th>
+                    </thead>
+                </table>
+                <div class="displaytotal">
+                    <hr>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card salade" id="item1" >
+            <!-- <img src="/img/abisu.jpg" alt=""> -->
+            <div class="card-img i2"></div>
+
+            <h3 >Sushi nigiri</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit </p>
+            <h4>20 $</h4>
+            <button  class="test" >Order now btn</button>
+            <p class="quantity"></p>
+        </div>
         <div class="card salade">
             <div class="card-img i2"></div>
             <h3>Sushi nigiri</h3>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
+            <p class="quantity"></p>
         </div>
-        <div class="card salade">
-            <div class="card-img i2"></div>
-            <h3>Sushi nigiri</h3>
+        <div class="card sushi">
+            <div class="card-img"></div>
+            <h3>Sushi nigir</h3>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
+            <p class="quantity"></p>
         </div>
         <div class="card sushi">
             <div class="card-img"></div>
@@ -53,7 +91,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
+            <p class="quantity"></p>
         </div>
         <div class="card sushi">
             <div class="card-img"></div>
@@ -61,7 +100,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
+            <span class="quantity"></span>
         </div>
         <div class="card sushi">
             <div class="card-img"></div>
@@ -69,15 +109,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
-        </div>
-        <div class="card sushi">
-            <div class="card-img"></div>
-            <h3>Sushi nigiri</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur <br>
-                adipiscing elit </p>
-            <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <!-- **********************************2******************************* -->
         <div class="card salade">
@@ -86,7 +118,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card salade">
             <div class="card-img i2"></div>
@@ -94,7 +126,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card sushi">
             <div class="card-img"></div>
@@ -102,7 +134,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card sushi">
             <div class="card-img"></div>
@@ -110,7 +142,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card salade">
             <div class="card-img i2"></div>
@@ -118,7 +150,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card desserte">
             <div class="card-img i3"></div>
@@ -126,7 +158,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card desserte">
             <div class="card-img i3"></div>
@@ -134,7 +166,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card desserte">
             <div class="card-img i3"></div>
@@ -142,33 +174,33 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         
         <!-- **********************************3******************************* -->
         <div class="card  desserte">
             <div class="card-img i3"></div>
-            <h3>Sushi nigiri</h3>
+            <h3>desserte venezia</h3>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card desserte">
             <div class="card-img i3"></div>
-            <h3>Sushi nigiri</h3>
+            <h3>desserte</h3>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card desserte">
             <div class="card-img i3"></div>
-            <h3>Sushi nigiri</h3>
+            <h3>desserte</h3>
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card salade">
             <div class="card-img i2"></div>
@@ -176,7 +208,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card salade ">
             <div class="card-img i2"></div>
@@ -184,7 +216,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         <div class="card salade">
             <div class="card-img i2"></div>
@@ -192,7 +224,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>
                 adipiscing elit </p>
             <h4>20 $</h4>
-            <button>Order now</button>
+            <button class="test">Order now</button>
         </div>
         
     </div>
