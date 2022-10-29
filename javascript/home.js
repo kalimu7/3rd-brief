@@ -71,8 +71,9 @@ const show = document.querySelector('.show-nu');
 var count = 0;
 var count1 = 0;
 let quantity1 =0;
-var total =0;
-let arrTotal = [];
+
+
+let sum = 0;
 // var quantity=0;
 ordernow.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -91,93 +92,49 @@ ordernow.forEach((btn) => {
             <tbody>
                 <tr class="total">
                     <td><h4>${titl5}</h4><td>    
-                    <td>${price}</td>
+                    <td class="pricediv">${price} $</td>
 
-                    <td><input type="number"  style="width : 30px;" class="input-quantity" value="" ></td>
+                    <td><input type="number"  style="width : 30px;" class="input-quantity" value="1" ></td>
 
-                    <td class="totalValue"> ${total} $</td>
+                    <td class="totalValue"> ${total} </td>
 
                 </tr>
             </tbody>
             </table>
 
         </div>`
-
+        const panierdontainer = document.getElementsByClassName('cartpanier')[0]
         panierdontainer.insertAdjacentHTML("beforeend",html);
 
-        let qnt =  document.querySelectorAll(".input-quantity");
-        let totalClass =  document.querySelectorAll(".total");
+        
+
+        // let totalClass =  document.querySelectorAll(".total");
         
          
-        console.log("quantite = ",qnt.length)
+        // console.log("quantite = ",qnt.length);
+        // qnt[0] =1;
         
-        let displaytotal =  document.querySelector(".displaytotal");
-        for(let  i = 0 ; i < qnt.length ; i++){
-
-            qnt[i].addEventListener('change',(e)=>{
-
-                total =  price * parseFloat(qnt[i].value);
-                 console.log(total);
-                 displaytotal.innerHTML = `<h1>${final}</h1>`
-            })
-
-        }
-        // console.log("total",total)
+       
         
-        arrTotal.push(total);
-        let final = 0;
-
-        for (let i = 0; i < arrTotal.length; i++) {
-            final +=  arrTotal[i];
-           
-            
-        }
-        
-        displaytotal.innerHTML = `<h1>${final}</h1>`
-
-
-
-
-
-
-
-
-
-
-
-
-
         
         
         
     })
     
 })
+let arrTotal = [];
+let total =[];
+
+
+
 
 // ********************test moving cart to the nexy page*********************
 const firstcard = document.querySelector("#card1");
 const container_cart = document.querySelector(".container-cart");
-const panierdontainer = document.querySelector('.cartpanier');
+
 const titre = document.querySelector('#title-1');
 
-// document.getElementById('btnitem1').addEventListener('click', () => {
-//     cards.forEach((element)=>{
-        
-//     let html = `<div class="panier-table">
-//      <h4>${titre.innerHTML}</h4>
-//      <h4>price dollar</h4>
-//     </div>`
 
-
-//     })
-//     console.log(titre.innerHTML);
-//     let html = `<div class="panier-table">
-//     <h4>${titre.innerHTML}</h4>
-//     <h4>price dollar</h4>
-// </div>`
-//     panierdontainer.insertAdjacentHTML("beforeend",html);
-
-// })
 
 const cartbtn = document.querySelector('#carte');
 cartbtn.addEventListener('click', () => {
@@ -187,3 +144,24 @@ cartbtn.addEventListener('click', () => {
 
 console.log(cards[4].children[1].src);
 // console.log(cards[4].children[3].innerHTML);
+
+
+const ttlbtn = document.querySelector('#calculatetotal');
+ttlbtn.addEventListener('click',()=>{
+    const panierdontainer = document.getElementsByClassName('cartpanier')[0];
+    const div = panierdontainer.querySelectorAll('.total');
+    // console.log(prc);
+    div.forEach((element)=>{
+        let price = element.querySelector(".pricediv")
+        let inputquantity = element.querySelector(".input-quantity")
+        console.log(price.innerHTML ,inputquantity.value )
+
+        arrTotal.push(Number(price.innerHTML.replace("$",""))* inputquantity.value)
+
+    })
+    let taotaltoatal  = arrTotal.reduce((pre,cur) =>pre +cur)
+    console.log(taotaltoatal);
+    // document.querySelector(".displaytotal").innerHTML = taotaltoatal;
+    arrTotal = [];
+
+})
