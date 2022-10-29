@@ -86,31 +86,21 @@ ordernow.forEach((btn) => {
      
         
         let html = `<div class="panier-table">
-        
+
         <table class="styled-table">
-    
-            <tbody>
+            
                 <tr class="total">
-                    <td><h4>${titl5}</h4><td>    
-                    <td class="pricediv">${price} $</td>
+                    <td style="width: 90px;"><h4>${titl5}</h4><td>    
+                    <td style="width: 90px;" class="pricediv">${price} $</td>
 
-                    <td><input type="number"  style="width : 30px;" class="input-quantity" value="1" ></td>
-
-                    <td class="totalValue"> ${total} </td>
-
-                </tr>
-            </tbody>
+                    <td style="width: 90px;"><input type="number"  style="width : 30px;" class="input-quantity" value="1" ></td>
+                </td>
+            
             </table>
-
         </div>`
         const panierdontainer = document.getElementsByClassName('cartpanier')[0]
         panierdontainer.insertAdjacentHTML("beforeend",html);
-
-        
-
         // let totalClass =  document.querySelectorAll(".total");
-        
-         
         // console.log("quantite = ",qnt.length);
         // qnt[0] =1;
         
