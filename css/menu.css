@@ -21,8 +21,8 @@
 }
 #calculatetotal{
     position: fixed;
-    bottom: 105;
-    right: 1.2%;
+    bottom: 1.3%;
+    right: 1.23% ;
     color: #009879;
     background-color: white;
     border: none;
@@ -35,8 +35,8 @@
     background-color: #009879;
     justify-content: space-between;
     position: fixed;
-    bottom: 10%;
-    right: 1.23 ;
+    bottom: 1.3%;
+    right: 1.5% ;
 }
 
 .hide {
@@ -190,7 +190,7 @@ footer button {
         margin: 0 10px;
     }
 }
-@media screen and (max-width : 433px) {
+@media screen and (max-width : 505px) {
     
     .header .resp-ico{
         display: block;
@@ -215,8 +215,17 @@ footer button {
         justify-content: center;
         align-items: center;
         right: -100%;
-        
     }
+    .designdisplay{
+        
+        bottom: 41%;
+        right: 1.5% ;
+    }
+    #calculatetotal{
+        bottom: 41%;
+        right: 1.5% ;
+    }
+
     /* .show{
         right:0;
     } */
@@ -329,8 +338,8 @@ footer button {
 }
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
-    text-align: start;
+    padding: 12px 0;
+    text-align: center;
 }
 
 .styled-table tbody tr {
@@ -348,9 +357,13 @@ footer button {
     position: absolute;
     bottom: 10px;
     left: 0;
-
 }
 /* .card-container{
     
     overflow-y: scroll;
+} */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: auto;
+  margin: 0;
 } */

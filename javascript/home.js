@@ -92,29 +92,22 @@ ordernow.forEach((btn) => {
                 <tr class="total">
                     <td style="width: 90px;"><h4>${titl5}</h4><td>    
                     <td style="width: 90px;" class="pricediv">${price} $</td>
-                    <td style="width: 90px;"><input type="number"  style="width : 30px;" class="input-quantity" value="1" min="1" ></td>
-                    <td style="width: 90px;"><button class="btn">remove item</button></td>
-
+                    <td style="width: 90px;"><input type="number"  style="width:30px;" class="input-quantity" value="1" min="1" ></td>
+                    <td style="width: 90px;"><button class="btn-remove" >remove item</button></td>
                 </td>
-            
             </table>
         </div>`
         const panierdontainer = document.getElementsByClassName('cartpanier')[0];
         panierdontainer.insertAdjacentHTML("beforeend",html);
         // let totalClass =  document.querySelectorAll(".total");
         // console.log("quantite = ",qnt.length);
-        // qnt[0] =1;
-        
-       
-        
-        
-        
-        
+        // qnt[0] =1;  
     })
-    
 })
 let arrTotal = [];
 let total =[];
+
+
 
 
 
@@ -133,7 +126,7 @@ cartbtn.addEventListener('click', () => {
     console.log("clicked the panier");
 })
 
-console.log(cards[4].children[1].src);
+// console.log(cards[4].children[1].src);
 // console.log(cards[4].children[3].innerHTML);
 
 
@@ -141,19 +134,38 @@ const ttlbtn = document.querySelector('#calculatetotal');
 ttlbtn.addEventListener('click',()=>{
     const panierdontainer = document.getElementsByClassName('cartpanier')[0];
     const div = panierdontainer.querySelectorAll('.total');
-    console.log(div[0])
+    // console.log(div[0])
     // console.log(prc);
     div.forEach((element)=>{
         let price = element.querySelector(".pricediv")
         let inputquantity = element.querySelector(".input-quantity")
         console.log(price.innerHTML ,inputquantity.value )
-
         arrTotal.push(Number(price.innerHTML.replace("$",""))* inputquantity.value)
-
     })
+    
     let taotaltoatal  = arrTotal.reduce((pre,cur) =>pre +cur)
-    console.log(taotaltoatal);
+    // console.log(taotaltoatal);
     document.querySelector(".areatoshow").innerHTML = taotaltoatal;
     arrTotal = [];
-
+    const btnrmv = document.querySelectorAll('.btn-remove');
+    btnrmv.forEach((element)=>{
+    element.addEventListener("click",()=>{
+        const pardiv =  element.parentNode.parentNode;
+        pardiv.querySelector('input').value=0; 
+        pardiv.remove();
+    })
 })
+})
+// const btnrmv = document.querySelectorAll('.btn-remove');
+// console.log(btnrmv)
+// btnrmv.forEach((element)=>{
+//     element.addEventListener("click",()=>{
+//         console.log("elm");
+//     })
+// })
+
+
+// function remove(price){
+//     console.log();
+// }
+// onclick="remove('${price}')" 
