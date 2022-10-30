@@ -21,21 +21,22 @@
 }
 #calculatetotal{
     position: fixed;
-    bottom: 10px;
-    right: 20px;
+    bottom: 105;
+    right: 1.2%;
     color: #009879;
     background-color: white;
     border: none;
     outline: none;
     padding: 3px 3px;
+    cursor: pointer;
 }
 .designdisplay{
     color: white;
     background-color: #009879;
     justify-content: space-between;
     position: fixed;
-    bottom: 10px;
-    right: 20px;
+    bottom: 10%;
+    right: 1.23 ;
 }
 
 .hide {
