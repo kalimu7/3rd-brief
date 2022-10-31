@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+.carte-menu2{
+    display: none;
+}
 .cartpanier{
     height: 500px;
     width: 400px;
@@ -18,10 +21,11 @@
     border-radius: 20px;
     box-shadow: 0px 25px 40px #1687d933;
     overflow-y: scroll;
+    display: none;
 }
 #calculatetotal{
-    position: fixed;
-    bottom: 1.3%;
+    position: absolute;
+    /* bottom: 1.3%; */
     right: 1.23% ;
     color: #009879;
     background-color: white;
@@ -30,17 +34,23 @@
     padding: 3px 3px;
     cursor: pointer;
 }
+#confirm-order{
+    position: absolute;
+    top :20px; 
+    width: 380px;
+    right: 0;
+}
 .designdisplay{
     color: white;
     background-color: #009879;
     justify-content: space-between;
     position: fixed;
-    bottom: 1.3%;
+    bottom: 4.5%;
     right: 1.5% ;
 }
 
 .hide {
-    display: none;
+    display: block;
 }
 .header{
     background-color: white;
@@ -190,7 +200,7 @@ footer button {
         margin: 0 10px;
     }
 }
-@media screen and (max-width : 505px) {
+@media screen and (max-width : 520px) {
     
     .header .resp-ico{
         display: block;
@@ -217,7 +227,6 @@ footer button {
         right: -100%;
     }
     .designdisplay{
-        
         bottom: 41%;
         right: 1.5% ;
     }
@@ -225,7 +234,14 @@ footer button {
         bottom: 41%;
         right: 1.5% ;
     }
-
+    
+    .carte-menu1{
+        display: none;
+    }
+    .carte-menu2{
+        position: fixed; top:30px; right:50px;
+        display: block;
+    }
     /* .show{
         right:0;
     } */
@@ -300,6 +316,19 @@ footer button {
     
     
 }
+.show-nu1{
+    padding: 6px;
+    border-radius: 15px;
+    /* position: absolute;    */
+    color: #F2B203;
+    
+    background-color: red;
+    font-size: 15px;
+    /* height: 10px; */
+    display: inline;
+    
+    
+}
 /* ***************responsive footer***************** */
 .active{
     background-color: #ffffff;
@@ -358,6 +387,7 @@ footer button {
     bottom: 10px;
     left: 0;
 }
+
 /* .card-container{
     
     overflow-y: scroll;

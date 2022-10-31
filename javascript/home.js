@@ -68,6 +68,8 @@ allbtn.addEventListener("click", displayall);
 // ********************cart logic********************* // ********************cart logic********************* // ********************cart logic*********************
 const ordernow = document.querySelectorAll(".test");
 const show = document.querySelector('.show-nu');
+const show1 = document.querySelector('.show-nu1');
+
 var count = 0;
 var count1 = 0;
 let quantity1 =0;
@@ -80,6 +82,7 @@ ordernow.forEach((btn) => {
         
         count++;
         show.innerText = count;
+        show1.innerHTML = count;
         let titl5 =  btn.parentElement.querySelector('h3').innerHTML ;//title
         let price =  parseFloat(btn.parentElement.querySelector('h4').innerHTML);//prix
        
@@ -125,6 +128,11 @@ cartbtn.addEventListener('click', () => {
     document.querySelector('.cartpanier').classList.toggle("hide");
     console.log("clicked the panier");
 })
+const cartbtn1 = document.querySelector('#carte1');
+cartbtn1.addEventListener('click', () => {
+    document.querySelector('.cartpanier').classList.toggle("hide");
+    console.log("clicked the panier");
+})
 
 // console.log(cards[4].children[1].src);
 // console.log(cards[4].children[3].innerHTML);
@@ -154,8 +162,19 @@ ttlbtn.addEventListener('click',()=>{
         pardiv.querySelector('input').value=0; 
         pardiv.remove();
     })
+    
 })
+if(taotaltoatal != 0){
+    document.getElementById('confirm-order').addEventListener('click',()=>{
+        alert('your order is successfully placed');
+        location.reload()
+    })
+}
 })
+
+    
+
+
 // const btnrmv = document.querySelectorAll('.btn-remove');
 // console.log(btnrmv)
 // btnrmv.forEach((element)=>{
