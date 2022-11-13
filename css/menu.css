@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.carte-menu1{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
 .carte-menu2{
     display: none;
 }
