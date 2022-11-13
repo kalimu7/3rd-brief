@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 .carte-menu1{
     margin: 0;
     padding: 0;
     display: inline;
-=======
+}
 .btn-remove{
     background-color: rgb(0, 0, 0);
     color: white;
@@ -16,13 +16,13 @@
     border: none;
     outline: none;
     cursor: pointer;
->>>>>>> 4b5750c7a7c25bcb25c8152efeed1d6002780b12
+
 }
 .carte-menu2{
     display: none;
 }
 .cartpanier{
-    height: 550px;
+    height: 450px;
     width: 400px;
     position: relative;
     float: right;
@@ -70,12 +70,13 @@
     color: white;
     background-color: #F2B203;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     
     /* bottom: 30px; */
-    bottom: 16px;
+    top: 510px;
     right: 0;
     width: 400px;
+    
     
 }
 

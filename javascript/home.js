@@ -22,6 +22,10 @@ const cards = document.querySelectorAll('.card');
 
 //display sushi
 function dsalade() {
+    saladebtn.style.background = "red";
+    sushibtn.style.background = "#F2B203";
+    dessertebtn.style.background = "#F2B203";
+    allbtn.style.background = "#F2B203";
     cards.forEach(element => {
         element.style.display = "block";
         if (!element.classList.contains("salade")) {
@@ -31,7 +35,10 @@ function dsalade() {
 }
 
 function dsushi() {
-
+    saladebtn.style.background = "#F2B203";
+    sushibtn.style.background = "red";
+    dessertebtn.style.background = "#F2B203";
+    allbtn.style.background = "#F2B203";
     cards.forEach(element => {
         element.style.display = "block";
         if (!element.classList.contains("sushi")) {
@@ -41,7 +48,10 @@ function dsushi() {
 }
 
 function ddesserte() {
-
+    saladebtn.style.background = "#F2B203";
+    sushibtn.style.background = "#F2B203";
+    dessertebtn.style.background = "red";
+    allbtn.style.background = "#F2B203";
     cards.forEach(element => {
 
         element.style.display = "block";
@@ -52,6 +62,10 @@ function ddesserte() {
 }
 
 function displayall() {
+    saladebtn.style.background = "#F2B203";
+    sushibtn.style.background = "#F2B203";
+    dessertebtn.style.background = "#F2B203";
+    allbtn.style.background = "red";
     cards.forEach(element => {
         element.style.display = "block";
     })
