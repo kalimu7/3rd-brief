@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 .header{
+
+    position: fixed;
+    top: 0;
     background-color: white;
     /* display: flex; */
     height: 100px;
@@ -42,6 +45,7 @@ header ul li a{
 }
 /* ********************home container************* */
 .home-container{
+    margin-top: 50px;
     color: white;
     height: calc(100vh - 100px);
     /* height: 82.6vh; */
@@ -130,6 +134,7 @@ footer button {
     cursor: pointer;
 }
 .copyright{
+    outline: none;
     padding-top:30px ;
     height: 80px;
     text-align: center;

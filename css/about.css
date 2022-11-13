@@ -7,6 +7,8 @@ body{
     overflow-x: hidden;
 }
 .header{
+    top: 0px;
+    position: fixed;
     background-color: white;
     /* display: flex; */
     height: 100px;
@@ -92,7 +94,8 @@ header ul li a{
 
 /* ***********************************footer********************************* */
 footer{
-    background-color: #CEE1E1;
+    background-color: #000;
+    color: #FFF;
     line-height: 30px;
     display: grid;
     grid-template-columns: auto auto auto;
