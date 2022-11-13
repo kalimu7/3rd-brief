@@ -181,7 +181,7 @@ ttlbtn.addEventListener('click',()=>{
 if(taotaltoatal != 0){
     document.getElementById('confirm-order').addEventListener('click',()=>{
         alert('your order is successfully placed');
-        location.reload()
+        location.reload();
     })
 }
 })

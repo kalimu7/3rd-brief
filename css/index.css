@@ -60,12 +60,13 @@ header ul li a{
     margin-bottom: 20px;
 }
 .homemidle .card{
-    height: 350px;
+    height: 380px;
     width: 300px;
     /* background-color: #f1e5e5; */
     border-radius: 20px;
 }
 .homemidle .card h2{
+    padding-top: 20px;
     text-align: center;
 }
 .homemidle .card .card-img{
@@ -73,6 +74,7 @@ header ul li a{
     width: 300px;
     background: url(/img/dessert.webp);
     background-size: cover;
+    border-radius: 20px;
 }
 .homemidle .card .img-card-2{
     background: url(/img/asian-food.jpg);
@@ -100,7 +102,21 @@ header ul li a{
 }
 
 /* ***************************footer************************ */
+footer .order-img{
+    display: block;
+    height: 175px;
+    width: 263px;
+    margin: 10px 0;
+}
+footer .socialmedia{
+    padding:10px 0;
+}
+footer .socialmedia i{
+    margin-right:10px;
+    cursor: pointer;
+}
 footer{
+    padding: 10px 0;
     background-color: black;
     color: white;
     line-height: 30px;
@@ -116,6 +132,7 @@ footer .card{
     border-radius: 20px;
 }
 footer .card .img-card-4{
+    margin: 10px 0;
     height: 175px;
     width: 263px;
     background:url(/img/IMAGE.jpg);
@@ -123,7 +140,8 @@ footer .card .img-card-4{
 }
 footer button {
     background-color: transparent;
-    border: solid 1px #000;
+    color: #FFF;
+    border: solid 1px rgb(255, 255, 255);
     padding: 5px 5px;
     font-size: 10px;
     border-radius: 5px;

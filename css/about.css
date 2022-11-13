@@ -82,10 +82,25 @@ header ul li a{
     padding-bottom: 10px;
 }
 .content p{
+    width: 488px;
+    margin:  0 auto;
+    padding: 30px 0 ;
+    font-size: 20px;
+    /* text-align: center; */
+    /* letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 30px; */
+    /* text-align: center; */
+    /* padding-left:  60px;
+    padding-right:  30px;
+} */
+/* .content .secondpara{
     letter-spacing: 2px;
     font-size: 20px;
-    padding-top: 50px;
-}
+    /* padding-top: 50px; */
+    
+    /* padding: 0 60px; */
+} 
 .contentofaboutus{
     padding: 10px;
     margin-bottom: 20px;
@@ -94,6 +109,7 @@ header ul li a{
 
 /* ***********************************footer********************************* */
 footer{
+    padding: 10px 0;
     background-color: #000;
     color: #FFF;
     line-height: 30px;
@@ -102,6 +118,19 @@ footer{
     justify-content: center;
     gap: 200px;
 }
+footer .order-img{
+    display: block;
+    height: 175px;
+    width: 263px;
+    margin: 10px 0;
+}
+footer .socialmedia{
+    padding:10px 0;
+}
+footer .socialmedia i{
+    margin-right:10px;
+    cursor: pointer;
+}
 footer .card{
     /* height: 350px;
     width: 300px; */
@@ -109,6 +138,7 @@ footer .card{
     border-radius: 20px;
 }
 footer .card .img-card-4{
+    margin: 10px 0;
     height: 175px;
     width: 263px;
     background:url(/img/IMAGE.jpg);
@@ -132,20 +162,23 @@ footer button {
 }
 
 /* *******************about us media querry*************** */
-@media screen and (max-width : 1000px) {
+@media screen and (max-width : 1001px) {
     .aboutus{
         align-items: center;
         flex-direction: column;
     }
     footer{
         grid-template-columns: auto auto;
-        gap: 50px;
+        gap: 40px;
     }
     .aboutus .img{
         width: 100%;
     }
     .content{
         width: 100%;   
+    }
+    .con2 {
+        order:2 ;
     }
 }
 
@@ -155,6 +188,9 @@ footer button {
         gap: 50px;
     }
     .aboutus .imgfm{
+        width: 400px;
+    }
+    .aboutus .content p{
         width: 400px;
     }
 }
@@ -199,4 +235,5 @@ footer button {
         width: 433px;
     } */
 }
+
 /* *******************about us media querry*************** */

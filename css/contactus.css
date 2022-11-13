@@ -105,6 +105,7 @@ header ul li a{
 }
 /* ************************contact container******************** */
 footer{
+    padding: 10px 0;
     background-color: black;
     color: white;
     line-height: 30px;
@@ -112,6 +113,19 @@ footer{
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 200px;
+}
+footer .order-img{
+    display: block;
+    height: 175px;
+    width: 263px;
+    margin: 10px 0;
+}
+footer .socialmedia{
+    padding:10px 0;
+}
+footer .socialmedia i{
+    margin-right:10px;
+    cursor: pointer;
 }
 footer .card{
     /* height: 350px;
@@ -127,7 +141,8 @@ footer .card .img-card-4{
 }
 footer button {
     background-color: transparent;
-    border: solid 1px #000;
+    color: #FFF;
+    border: solid 1px rgb(255, 255, 255);
     padding: 5px 5px;
     font-size: 10px;
     border-radius: 5px;
@@ -141,9 +156,6 @@ footer button {
     color: white;
     background-color: black;
 }
-
-
-
 
 
 /* ***********responsive nav bar************** */
