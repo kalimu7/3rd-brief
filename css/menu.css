@@ -183,11 +183,11 @@ header ul li a{
 }
 /* *******************i2****************** */
 .card-container .card .i2{
-    background-image: url(/img/salaaaade.jpg);
+    background-image: url(../img/salaaaade.jpg);
 }
 /* *******************i3****************** */
 .card-container .card .i3{
-    background-image: url(/img/dessert\ 1.jpeg);
+    background-image: url(../img/dessert\ 1.jpeg);
 }
 /* ***************************footer************************ */
 footer .order-img{
